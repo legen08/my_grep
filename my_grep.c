@@ -33,7 +33,7 @@ void search_in_file(char* substr, char* path) {
 		perror("Ошибка открытия на чтение");
 		exit(1);
 	}
-	char* buf = malloc(100);
+	char* buf = malloc(100000);
 	if (buf == NULL) {
 		perror(buf);
 		fclose(cur_file);
